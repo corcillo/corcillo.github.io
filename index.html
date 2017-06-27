@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bex</title>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <link rel="stylesheet" href="/assets/css/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+</head>
+  <body>  
+  <div class="container" ng-app="myApp" ng-controller="myCtrl">
+    <div ng-view>
+      <h1>{{firstName}}</h1>
+    </div>
+  </div>
+  <script src="assets/js/myApp.js"></script>
+  <script src="assets/js/myCtrl.js"></script>
+  </body>
+</html>

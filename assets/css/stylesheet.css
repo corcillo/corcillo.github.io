@@ -1,0 +1,30 @@
+h1 {
+  font-weight: bold;
+  color: skyblue;
+  font-size: 32px;
+  padding: 10px;
+}
+
+/* unvisited link */
+a:link {
+  color: skyblue;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: skyblue;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: aliceblue;
+  text-decoration: none;
+}
