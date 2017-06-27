@@ -5,26 +5,24 @@ h1 {
   padding: 10px;
 }
 
-/* unvisited link */
-a:link {
-  color: skyblue;
+.currentLink {
+  color: deeppink;
   text-decoration: none;
 }
 
-/* visited link */
-a:visited {
+a:link, a:visited {
   color: skyblue;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: deepskyblue;
+  color: pink;
   text-decoration: none;
 }
 
 /* selected link */
 a:active {
-  color: aliceblue;
+  color: lightcyan;
   text-decoration: none;
 }

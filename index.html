@@ -9,9 +9,8 @@
 </head>
   <body>  
   <div class="container" ng-app="myApp" ng-controller="myCtrl">
-    <div ng-view>
-      <h1>{{firstName}}</h1>
-    </div>
+  <div style="float: left; width: 15%;" ng-include="'/assets/partials/sidebar.html'"><p>hi</p></div>
+  <div ng-view style="float: right;"></div>
   </div>
   <script src="assets/js/myApp.js"></script>
   <script src="assets/js/myCtrl.js"></script>
