@@ -1,7 +1,6 @@
 app.controller("myCtrl", function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
     $scope.selectedPage = "home";
+    $scope.gridWidth = 1;
     $scope.setCurrentLink = function(path) {
       $scope.selectedPage = path;
     }
@@ -11,6 +10,13 @@ app.controller("myCtrl", function($scope) {
       } else {
         return "";
       }
+    }
+    $scope.range = function(len) {
+      return Array.from(Array(len).keys());
+    }
+    $scope.calculatePhotoWidth = function() {
+//      console.log(angular.element(document.getElementById("photoDiv")).clientWidth);
+      return 1000;
     }
 });
 app.config(function($routeProvider) {
