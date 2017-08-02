@@ -1,11 +1,28 @@
 app.controller("myCtrl", function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+    $scope.selectedPage = "home";
+    $scope.gridWidth = 1;
+    $scope.setCurrentLink = function(path) {
+      $scope.selectedPage = path;
+    }
+    $scope.getLinkColorCss = function(path) {
+      if ($scope.selectedPage === path) {
+        return {"color": "paleturquoise"};
+      } else {
+        return "";
+      }
+    }
+    $scope.range = function(len) {
+      return Array.from(Array(len).keys());
+    }
+    $scope.calculatePhotoWidth = function() {
+//      console.log(angular.element(document.getElementById("photoDiv")).clientWidth);
+      return 1000;
+    }
 });
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "/assets/partials/sidebar.html"
+        templateUrl : "/assets/partials/home.html"
     })
     .when("/photos", {
         templateUrl : "/assets/partials/photos.html"
@@ -16,7 +33,7 @@ app.config(function($routeProvider) {
     .when("/about", {
         templateUrl : "/assets/partials/about.html"
     })
-    .when("/art", {
+    .when("/contact", {
         templateUrl : "/assets/partials/contact.html"
     })
 });

@@ -1,1 +1,11 @@
-<h1>photos</h1>
+<div style="float: right;" id="photoDiv">
+<table>
+  <tr><td><h1 style="float: right;">photos</h1></td></tr>
+  <tr ng-repeat="n in range(4)">
+    <td ng-repeat="j in range(gridWidth)">
+<!--      <img ng-src="/assets/images/kelvin2.jpg" width={{calculatePhotoWidth()}}>-->
+      <img ng-src="/assets/images/kelvin2.jpg" style="max-width: 100%;">
+    </td>
+  </tr>
+</table>
+</div>
