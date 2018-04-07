@@ -6,14 +6,16 @@
   <link rel="stylesheet" href="/assets/css/stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="shortcut icon" type="image/jpg" href="/assets/images/favicon.jpg"/>
 </head>
   <body>  
-  <div class="container" ng-app="myApp" ng-controller="myCtrl">
-    <div style="float: left; width: 15%; position: fixed;" ng-include="'/assets/partials/sidebar.html'"></div>
+  <div id="sideBarContainer" class="container" ng-app="myApp" ng-controller="myCtrl">
+    <div style="float: left; width: 15%; position: fixed;" ng-include="'/assets/partials/sidebar.html'" ng-show="showSideBar"></div>
     <div ng-view style="float: right;"></div>
   </div>
   <script src="assets/js/myApp.js"></script>
   <script src="assets/js/myCtrl.js"></script>
+  <script src="assets/js/scrollCtrl.js"></script>
   </body>
 </html>

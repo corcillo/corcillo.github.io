@@ -15,9 +15,10 @@ app.controller("myCtrl", function($scope) {
       return Array.from(Array(len).keys());
     }
     $scope.calculatePhotoWidth = function() {
-//      console.log(angular.element(document.getElementById("photoDiv")).clientWidth);
       return 1000;
     }
+    $scope.showSideBar = true;
+    $scope.oldY = 0;
 });
 app.config(function($routeProvider) {
     $routeProvider
