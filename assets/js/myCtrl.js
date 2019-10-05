@@ -14,6 +14,10 @@ app.controller("myCtrl", function($scope) {
     $scope.range = function(len) {
       return Array.from(Array(len).keys());
     }
+    $scope.rando = function(maxNum) {
+        console.log("hereee");
+        return 9;
+    }
     $scope.calculatePhotoWidth = function() {
       return 1000;
     }
