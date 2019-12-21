@@ -5,6 +5,13 @@ h1 {
   padding: 10px;
 }
 
+h1_tight {
+  font-weight: bold;
+  color: skyblue;
+  font-size: 32px;
+  padding: 0px;
+}
+
 h2 {
   font-weight: bold;
   color: skyblue;
